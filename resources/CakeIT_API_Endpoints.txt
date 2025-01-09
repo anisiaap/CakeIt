@@ -1,0 +1,89 @@
+
+1. Client APIs
+These endpoints allow customers to interact with bakeries, place orders, and manage their profiles.
+
+- Register Client: POST /api/clients/register
+  Registers a new customer.
+  Request body: { username, email, password, profile }
+
+- Login Client: POST /api/clients/login
+  Authenticates a customer and returns a token.
+  Request body: { email, password }
+
+- View Bakeries: GET /api/bakeries
+  Retrieves a list of all bakeries available.
+
+- View Products by Bakery: GET /api/bakeries/:bakeryId/products
+  Retrieves a list of products for a specific bakery.
+  Params: bakeryId
+
+- Place Order: POST /api/orders
+  Allows a customer to place an order with a specific bakery.
+  Request body: { clientId, bakeryId, products, pickupOption, totalPrice }
+
+- View Client Orders: GET /api/clients/:clientId/orders
+  Retrieves all orders placed by the client.
+  Params: clientId
+
+- Reserve Easybox Slot: POST /api/easybox/reserve
+  Reserves an easybox slot for an order pickup.
+  Request body: { orderId, reservationDate, timeSlot }
+
+- Update Client Profile: PUT /api/clients/:clientId
+  Updates the client’s profile.
+  Params: clientId
+  Request body: { profile }
+
+
+2. Bakery APIs
+These endpoints allow bakeries to manage products, orders, and their profiles.
+
+- Register Bakery: POST /api/bakeries/register
+  Registers a new bakery.
+  Request body: { name, location, description, ownerId }
+
+- Login Bakery: POST /api/bakeries/login
+  Authenticates a bakery owner and returns a token.
+  Request body: { email, password }
+
+- Add Product: POST /api/bakeries/:bakeryId/products
+  Adds a new product to the bakery’s offerings.
+  Params: bakeryId
+  Request body: { name, description, price, customOptions, availability }
+
+- Update Product: PUT /api/bakeries/:bakeryId/products/:productId
+  Updates details of a specific product.
+  Params: bakeryId, productId
+  Request body: { name, description, price, customOptions, availability }
+
+- Delete Product: DELETE /api/bakeries/:bakeryId/products/:productId
+  Removes a product from the bakery’s offerings.
+  Params: bakeryId, productId
+
+- View Bakery Orders: GET /api/bakeries/:bakeryId/orders
+  Retrieves all orders placed with the bakery.
+  Params: bakeryId
+
+- Update Order Status: PUT /api/orders/:orderId/status
+  Allows the bakery to update the status of an order (e.g., accepted, completed).
+  Params: orderId
+  Request body: { status }
+
+
+3. Admin APIs
+These endpoints allow admins to monitor and manage overall platform activity.
+
+- View All Orders: GET /api/admin/orders
+  Retrieves all orders across all bakeries.
+
+- View All Easybox Reservations: GET /api/admin/easybox-reservations
+  Retrieves all easybox reservations for monitoring.
+
+- View Specific Order: GET /api/orders/:orderId
+  Allows admin to view details of a specific order.
+  Params: orderId
+
+- Manage Easybox Slots: PUT /api/easybox/:reservationId
+  Admin can modify easybox reservations in case of conflicts.
+  Params: reservationId
+  Request body: { reservationDate, timeSlot, slotNumber }
