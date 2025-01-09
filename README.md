@@ -3,6 +3,7 @@ Your favorite bakery, and more, just a tap away!
 
 ![black_on_white](https://github.com/user-attachments/assets/d5de7150-46e2-446b-b9d2-5af983e66480)
 
+![ezgif com-animated-gif-maker](https://github.com/user-attachments/assets/05322e8b-c211-4f5d-8cbf-b3656065c9a7)
 
 
 ## Project Proposal
