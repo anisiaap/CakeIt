@@ -4,7 +4,10 @@ Your favorite bakery, and more, just a tap away!
 ![black_on_white](https://github.com/user-attachments/assets/d5de7150-46e2-446b-b9d2-5af983e66480)
 
 ![ezgif com-animated-gif-maker](https://github.com/user-attachments/assets/05322e8b-c211-4f5d-8cbf-b3656065c9a7)
+<img width="950" alt="Screenshot 2025-01-22 at 16 43 41" src="https://github.com/user-attachments/assets/31ae9174-2072-4bb6-acf7-dacffca02bfc" />
 
+<img width="947" alt="Screenshot 2025-01-22 at 16 44 05" src="https://github.com/user-attachments/assets/f7e065e5-f23e-4b49-ad67-f7bab45da905" />
+<img width="927" alt="Screenshot 2025-01-22 at 16 48 53" src="https://github.com/user-attachments/assets/509d9dba-a341-432c-8110-545c1097860d" />
 
 ## Project Proposal
 
